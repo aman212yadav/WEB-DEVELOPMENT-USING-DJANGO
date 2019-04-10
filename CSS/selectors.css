@@ -1,0 +1,17 @@
+li{
+    font-weight: bold;
+}
+ul > li{
+    color:red;
+}
+ol > li{
+    color:blue;
+}
+ul ul{
+
+    font-style: italic;
+}
+ol + ul{
+background-color: aquamarine;
+
+}
