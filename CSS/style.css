@@ -1,0 +1,20 @@
+*{
+
+    color:red;
+}
+div {margin-left: 30px;}
+p{font-size: 30px;}
+#p2 {
+    font-family: 'Courier New', Courier, monospace;
+}
+#p3 {
+    margin-left: 20px;
+}
+.osmpara{
+
+    background-color: pink;
+}
+.bigpara{
+
+    font-size:50px;
+}
