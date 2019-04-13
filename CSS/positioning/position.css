@@ -1,0 +1,13 @@
+div{
+
+    background-color: lightcoral;
+    padding: 10px;
+    margin: 30px;
+    border: 5px solid black;
+}
+
+#div1{
+
+    position: sticky;
+    top:0px;
+}
