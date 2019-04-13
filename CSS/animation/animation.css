@@ -1,0 +1,19 @@
+div {
+    height: 40px;
+    width: 40px;
+    margin: 40px;
+    background-color: aqua;
+}
+@keyframes slide{
+
+    from{
+      margin-left: 30px;
+    }
+    to{
+        margin-left: 100px;
+    }
+}
+div:hover + div{
+    animation-name: slide;
+    animation-duration :2s;
+}
