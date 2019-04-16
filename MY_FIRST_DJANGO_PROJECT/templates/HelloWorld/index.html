@@ -1,0 +1,17 @@
+{% extends 'HelloWorld/base.html'%}
+{%block head%}
+  <style>
+      .bold{
+          font-weight: 1000;
+      }
+  </style>
+{%endblock%}
+{%block body%}
+<h1>Hello world !</h1>
+<ul>
+{% for friend in friends %}
+    <li class="{% cycle 'bold' '' %}" >{{friend}}</li>
+{%endfor%}
+</ul>
+<span>Developed by {{developer}}</span>
+{%endblock%}
