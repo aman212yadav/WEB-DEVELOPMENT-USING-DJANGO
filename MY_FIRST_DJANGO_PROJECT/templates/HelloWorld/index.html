@@ -7,11 +7,14 @@
   </style>
 {%endblock%}
 {%block body%}
-<h1>Hello world !</h1>
-<ul>
+{% include 'HelloWorld/navbar.html' %}
+<div class="container">
+<h1>Hello world from Aman Yadav !</h1>
+<ul class="collection">
 {% for friend in friends %}
-    <li class="{% cycle 'bold' '' %}" >{{friend}}</li>
+    <li class="{% cycle 'bold' '' %} collection-item" >{{friend}}</li>
 {%endfor%}
 </ul>
 <span>Developed by {{developer}}</span>
+</div>
 {%endblock%}
