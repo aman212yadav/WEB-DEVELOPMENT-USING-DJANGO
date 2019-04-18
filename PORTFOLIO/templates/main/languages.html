@@ -1,17 +1,14 @@
 {% extends 'main/base.html'%}
 {% block content %}
 {%include 'main/navbar.html'%}
-  <div class="container">
-     <h1 class="center-align"> Languages I love </h1>
-     <div class="row">
-         <ul class="collection">
-             <li class="collection-item">Python</li>
-             <li class="collection-item">C++</li>
-             <li class="collection-item">Java</li>
-             <li class="collection-item">C</li>
+<div class="container">
+    <h1 class="center-align"> Languages I love </h1>
+    <div class="row">
+        <ul class="collection">
+            {% for lan in languages %}
+            <li class="collection-item"> {{lan}} </li>
+            {% endfor %}
          </ul>
-     </div>
-
-  </div>
-
-{%endblock %}
+    </div>
+</div>
+{% endblock %}

@@ -14,18 +14,12 @@
           </div>
           <div class="col s12 m6">
             <ul class="collapsible">
+              {% for icon,name,about in projects %}
                 <li>
-                  <div class="collapsible-header"><i class="material-icons">Google</i>Google</div>
-                  <div class="collapsible-body"><span>it is amazing search engine</span></div>
+                  <div class="collapsible-header"><i class="material-icons">{{icon}}</i>{{name}}</div>
+                  <div class="collapsible-body"><span>{{about}}</span></div>
                 </li>
-                <li>
-                  <div class="collapsible-header"><i class="material-icons">mail</i>Gmail</div>
-                  <div class="collapsible-body"><span>Nice way of sharing .</span></div>
-                </li>
-                <li>
-                  <div class="collapsible-header"><i class="material-icons">whatshot</i>whatshot</div>
-                  <div class="collapsible-body"><span>you know what i mean</span></div>
-                </li>
+              {% endfor %}  
               </ul>
           </div>
      </div>
