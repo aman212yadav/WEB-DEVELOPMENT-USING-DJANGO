@@ -1,0 +1,17 @@
+{% extends 'main/base.html' %}
+{% block content %}
+<div class="p-3 mb-2 ">
+<div class="list-group">
+  <h3>Recent Articles</h3>
+    {% for article in latest_articles %}
+    <a href="{% url 'get_article' article.id %}" class="list-group-item list-group-item-action">
+      <div class="d-flex w-100 justify-content-between">
+        <h5 class="mb-1">{{article}}</h5>
+      </div>
+      <p class="mb-1">{{article.content}}</p>
+    </a>
+    {% endfor %}
+  </div>
+
+</div>
+{% endblock %}

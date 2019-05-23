@@ -1,0 +1,21 @@
+{% extends 'main/base.html' %}
+ {% block content %}
+ <div class="p-3">
+    {% for article in articles %}
+    <h1> Title      : {{article.title}} </h1>
+        <h3> Created at : {{article.createdAt}} </h3>
+        <h4> Written by : 
+            {% for author in article.authors.all %}
+              <a href="{% url 'get_author' author.pk %}">{{author}}</a> ,
+              {% endfor %}
+        </h4>
+        <p>
+           <h3>Content : {{article.content}}</h3>
+        </p>
+        <hr>
+        <hr>
+      {% endfor %}
+    </div>
+ {% endblock %}
+
+        
