@@ -2,16 +2,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"> 
-    <link rel="stylesheet" type="text/css" href="{% static 'css/materialize.min.css' %}"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{% static 'css/materialize.min.css' %}">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="{%static 'js/materialize.min.js' %}"></script>"
-    <title>Portfolio </title>
+    <script src="{% static 'js/materialize.min.js' %}"></script>
+    <title>Base </title>
 </head>
 <body>
-    {%block content %}{%endblock%}
-    {%block script %} {% endblock %}
-
+    {% block content %}
+    {% endblock %}
+    {% block script %}
+    {% endblock %}
 </body>
 </html>
-

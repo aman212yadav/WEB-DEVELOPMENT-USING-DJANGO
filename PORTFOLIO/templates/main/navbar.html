@@ -1,9 +1,10 @@
 <nav>
-    <div class="nav-wrapper">
-      <a href="{%url 'index' %}" class="brand-logo">Portfolio Website</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
-        <li><a href="{% url 'projects' %}">Projects</a></li>1
-        <li><a href="{% url 'languages' %}">Language</a></li>
-      </ul>
-    </div>
-  </nav>
+        <div class="nav-wrapper orange accent-4">
+          <a href="{% url 'home' %}" class="brand-logo ">AMAN YADAV</a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="{% url 'showProjects' %}">Projects</a></li>
+            <li><a href="{% url 'showLanguages' %}">Languages</a></li>
+           
+          </ul>
+        </div>
+</nav>

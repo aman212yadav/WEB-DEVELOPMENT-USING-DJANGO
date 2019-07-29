@@ -1,11 +1,10 @@
 {
-    "NAME": "Aman Yadav",
-    "ABOUT_ME": "I am Aman yadav and I'm studying Electrical Engineering  with fake  🧑  computer science branch  at NIT,Delhi. I have always submitted all my communication ,digital ,analog assignments on or before time.I Know how to make doc file and pdf file using good font style, proper format.I am a trianed proffesional in microsoft word.I  have been tarined by some legendary well known faculty of this prestigeous Institution some of them are Prashant kumar,Kapil kumar,Mahesh ,Richa,Ankur,Abhishek Mishra In these two year of my enginerring experience, the subject that are introduced to me are Electrical Enginering,Communction system,Digital electronics,Signal and system,Basic physics,Basic Chemistry,Defintions of mathematical subjects.",
-     "PROJECTS": [ ["Google","Google" ,"it is amazing search engine" ] ,
-        ["mail","gmail","Nice way of sharing."],
-        ["whatshot","whatshot","you know what i mean"]
-     ],
-     "LANGUAGES": [ "PYTHON","C++","C","JAVA"]                      
-    
- 
- }
+"NAME":"Aman yadav",
+"ABOUT_ME":" I am Aman yadav 3rd year student in Computer science at NIT DELHI. I am a competetive programmer and currently 5 star at codechef. I know android development and have developed some android apps I know web development using Django framework mainly Backend I am  also interested in machine learning and currently working on it ",
+"LANGUAGES":["c","c++","java","python"],
+"PROJECTS":[
+    ["filter_drama","First","Lorem ipsum dolor sit amet."],
+    ["place","Second","Lorem ipsum dolor sit amet."],
+    ["whatshot","Third","Lorem ipsum dolor sit amet."]
+]
+}
