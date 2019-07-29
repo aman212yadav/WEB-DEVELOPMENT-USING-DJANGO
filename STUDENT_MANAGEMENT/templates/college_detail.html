@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>College Detail</title>
+</head>
+<body>
+    <h1> College Details </h1>
+    <h2>College Name : {{college.collegeName}} </h2>
+    <h3> Students Enrolled </h3>
+    <ul>
+        {% for student in  college.student_set.all %}
+         <li>{{student.name}}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
