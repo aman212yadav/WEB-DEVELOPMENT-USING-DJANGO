@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="row">
+    <div class="col s6 offset-s3">
+      <div class="card">
+        <div class="card-content ">
+          <span class="card-title">Login</span>
+        <form method="POST">
+            {% csrf_token %}
+          {% for field in form %}
+          <div class="input-field col s6">
+              {{field}}
+          </div>
+            
+          {% endfor %}
+          <button class="btn waves-effect waves-light" type="submit" >Submit</button>
+        </form>
+                
+        </div>
+      </div>
+    </div>
+  </div>
+         
+{% endblock %}
