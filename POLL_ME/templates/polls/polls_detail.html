@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+  <div class="row ">
+    <div class="col-sm-6 offset-sm3 ">
+   <form action="{% url 'polls:vote' poll.id %}" method='POST'>
+      {% csrf_token %}
+      <h2>{{poll}}</h2>
+      {% if messages %}
+      <ul class="messages">
+         {% for message in messages %}
+         <li{% if message.tags %} class="{{ message.tags }}" {% endif %}>{{ message }}</li>
+         {% endfor %}
+      </ul>
+      {% endif %}
+      {% for choice in poll.choice_set.all %}
+      <input type="radio" name='choice' value="{{choice.id}}" id="choice{{choice.id}}" />
+      <label for="choice{{choice.id}}">{{choice.choice_text}}</label><br>
+      {% endfor %}
+      <button type="submit" class="btn btn-primary" {% if user_can_not_vote %} disabled {% endif %}>vote</button>
+   </form>
+   {% if user_can_not_vote %}
+   {% for result in results %}
+   {{result.text}}
+   <div class="progress">
+      <div class="progress-bar" role="progressbar" style="width:{{result.percentage}}%;">{{result.num_votes}}</div>
+   </div>
+   {% endfor %}
+   {% endif %}
+   <div>
+</div>
+</div>
+{% endblock %}

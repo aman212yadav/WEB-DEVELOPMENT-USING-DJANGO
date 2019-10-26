@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+<div class="row">
+    <div class="col-md-6 offset-md-3">
+    <p> Already have a account ? <a href='{% url "accounts:login" %}'>Login</a></p>
+<form method='post',action=''>
+    {% csrf_token %}
+    {% for field in form %} 
+        <div class="form-group">
+            {{ field.errors }}
+            {{ field.label_tag}}
+            {{ field }} 
+        </div>
+    {% endfor %}     
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+</div>
+</div>
+{% endblock %}
+

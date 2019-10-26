@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container">
+            <h2 class="text-center">Add poll using form below </h2>
+        <div class="row">
+                
+            <div class="col-md-6 offset-md-3">
+            <form method='post',action=''>
+                {% csrf_token %}
+                {% for field in form %} 
+                    <div class="form-group">
+                        {{ field.errors }}
+                        {{ field.label_tag}}
+                        {{ field }} 
+                    </div>
+                {% endfor %}     
+                
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+    
